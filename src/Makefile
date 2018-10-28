@@ -1,8 +1,8 @@
 LDFLAGS ?= -lrt
 SOURCES ?= platform_linux.c
 
-CFLAGS  += -I. -I$(PREFIX)/include/luajit-2.0 -I/usr/include/SDL -Wall -fPIC
-LDFLAGS += -lSDL -lSDL_ttf -lSDL_image -lSDL_gfx -lluajit-5.1 -lm -lpthread
+CFLAGS  += -I. -I${PREFIX}/include/lua5.1/ -I$(PREFIX)/include/luajit-2.0 -I/usr/include/SDL -Wall -fPIC
+LDFLAGS += -lSDL -lSDL_ttf -lSDL_image -lSDL_gfx -lluajit-5.1 -lm -lpthread -lrt
 EXE = ../bin/jivelite
 
 DEPS    = jive.h common.h log.h version.h

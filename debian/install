@@ -1,0 +1,4 @@
+bin/jivelite usr/bin
+share/jive usr/share
+share/lua/5.1/* usr/share/jive
+lib/lua/5.1/*.so usr/share/jive

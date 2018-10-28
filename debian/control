@@ -1,0 +1,13 @@
+Source: jivelite
+Section: sound
+Priority: optional
+Maintainer: Robin Elfrink <robin@15augustus.nl>
+Build-Depends: debhelper (>= 9), libsdl1.2-dev, liblua5.1-dev, libsdl-image1.2-dev, libsdl-ttf2.0-dev, libsdl-gfx1.2-dev, libluajit-5.1-dev
+Standards-Version: 3.9.8
+Homepage: https://github.com/ralph-irving/jivelite
+
+Package: jivelite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, lua-cjson, lua-filesystem, lua-expat, lua-md5
+Description: Community logitech media server control application
+  Community logitech media server control application
